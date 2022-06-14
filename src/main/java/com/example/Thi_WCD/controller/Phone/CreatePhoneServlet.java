@@ -20,7 +20,7 @@ public class CreatePhoneServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("/addphone.jsp").forward(req,resp);
+        req.getRequestDispatcher("/listphone.jsp").forward(req,resp);
     }
 
     @Override
@@ -31,6 +31,6 @@ public class CreatePhoneServlet extends HttpServlet {
         String name = req.getParameter("name");
         Phone phone = new Phone(name);
             req.setAttribute("name", name);
-            req.getRequestDispatcher("/create.jsp").forward(req, resp);
+            req.getRequestDispatcher("/addphone.jsp").forward(req, resp);
         }
     }

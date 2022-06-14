@@ -15,6 +15,10 @@ public class Phone {
         this.description = description;
     }
 
+    public Phone() {
+
+    }
+
     public int getId() {
         return id;
     }

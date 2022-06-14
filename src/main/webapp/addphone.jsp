@@ -23,10 +23,10 @@
 <a href="hello-servlet">Hello Servlet</a>
 <form action="/addphone" method="post">
     <fieldset class="form-group">
-        <label>Name Food</label> <input type="text"  class="form-control" name="namefood" value="<%= phone.getName() %>" >
+        <label>Name </label> <input type="text"  class="form-control" name="name" value="<%= phone.getName() %>" >
     </fieldset>
     <fieldset class="form-group">
-        <label>Thumbnail</label> <input type="text"  class="form-control" name="thumbnail" value="<%= phone.getBrand() %>" >
+        <label>Brand</label> <input type="text"  class="form-control" name="brand" value="<%= phone.getBrand() %>" >
     </fieldset>
     <fieldset class="form-group">
         <label>Price</label> <input type="number"  class="form-control" name="price" value="<%= phone.getPrice() %>" >
